@@ -1,0 +1,3 @@
+# Offline soundtrack renderer (media/soundtrack.py). The rest of the media pipeline is Node.
+numpy
+mido==1.3.3

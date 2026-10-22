@@ -15,7 +15,9 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "deploy": "bash scripts/deploy-gh-pages.sh"
+    "deploy": "bash scripts/deploy-gh-pages.sh",
+    "media": "python3 media/soundtrack.py && node media/render.mjs all",
+    "media:social": "node media/render.mjs social"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -38,6 +40,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.88.0",
+    "playwright-core": "^1.64.1",
     "shadcn": "^4.22.1",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.3",

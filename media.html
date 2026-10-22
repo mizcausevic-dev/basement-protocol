@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="cyber" data-mode="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basement Protocol Media Kit: 30-Second Spot and Social Images</title>
+    <meta name="description" content="Watch the 30-second Basement Protocol spot in 16:9, 9:16, and 1:1, and download social images, post copy, and alt text for ten networks." />
+    <link rel="canonical" href="https://mizcausevic-dev.github.io/basement-protocol/media.html" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#0b0c10" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="author" content="Miz Causevic" />
+
+    <meta property="og:type" content="video.other" />
+    <meta property="og:site_name" content="Basement Protocol" />
+    <meta property="og:title" content="Basement Protocol: the 30-second spot" />
+    <meta property="og:description" content="Fifty free bassline MIDI files. The soundtrack is rendered from the pack itself." />
+    <meta property="og:url" content="https://mizcausevic-dev.github.io/basement-protocol/media.html" />
+    <meta property="og:image" content="https://mizcausevic-dev.github.io/basement-protocol/media/social/og-card-1200x630-Cursor.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Basement Protocol card: 50 free bassline MIDI files, with a piano roll of BP44 Acid Rain" />
+    <meta property="og:video" content="https://mizcausevic-dev.github.io/basement-protocol/media/basement-protocol-commercial-16x9-Cursor.mp4" />
+    <meta property="og:video:type" content="video/mp4" />
+    <meta property="og:video:width" content="1920" />
+    <meta property="og:video:height" content="1080" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Basement Protocol: the 30-second spot" />
+    <meta name="twitter:description" content="Fifty free bassline MIDI files. The soundtrack is rendered from the pack itself." />
+    <meta name="twitter:image" content="https://mizcausevic-dev.github.io/basement-protocol/media/social/og-card-1200x630-Cursor.jpg" />
+
+    <script>
+      (function () {
+        var themes = ['cyber', 'bento', 'swiss', 'aqua', 'brutal', 'steel', 'parchment']
+        try {
+          var t = localStorage.getItem('bp-theme')
+          var m = localStorage.getItem('bp-mode')
+          var el = document.documentElement
+          if (t && themes.indexOf(t) > -1) el.dataset.theme = t
+          if (m === 'light' || m === 'dark') {
+            el.dataset.mode = m
+            el.classList.toggle('dark', m === 'dark')
+          }
+        } catch (e) {}
+      })()
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Basement Protocol: 50 free bassline MIDI files (30-second spot)",
+        "description": "A 30-second spot for Basement Protocol, a free pack of 50 bassline MIDI files. The soundtrack is rendered from four of the pack's own MIDI files.",
+        "thumbnailUrl": "https://mizcausevic-dev.github.io/basement-protocol/media/basement-protocol-commercial-16x9-poster-Cursor.jpg",
+        "uploadDate": "2026-10-22",
+        "duration": "PT30S",
+        "contentUrl": "https://mizcausevic-dev.github.io/basement-protocol/media/basement-protocol-commercial-16x9-Cursor.mp4",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "author": { "@type": "Person", "name": "Miz Causevic", "url": "https://github.com/mizcausevic-dev" },
+        "publisher": { "@type": "Organization", "name": "Kinetic Gain LLC", "url": "https://kineticgain.com" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:1rem;font-family:sans-serif">The media kit needs JavaScript. Download the spot directly: <a href="media/basement-protocol-commercial-16x9-Cursor.mp4">16:9 MP4</a>.</p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/media-main.tsx"></script>
+  </body>
+</html>
