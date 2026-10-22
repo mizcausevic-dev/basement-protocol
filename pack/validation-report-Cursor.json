@@ -1,0 +1,116 @@
+{
+  "collection": "Basement Protocol",
+  "generated_at_utc": "2026-10-22T05:02:24+00:00",
+  "validator": "generator/validate.py with mido 1.3.3 on Python 3.12.3",
+  "summary": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "midi_files": 50,
+    "note_events": 700
+  },
+  "checks": [
+    {
+      "id": "count",
+      "name": "Exactly 50 MIDI files with matching IDs across files and both CSVs",
+      "status": "pass",
+      "detail": "50 files, 50 index rows, 700 note-event rows",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "parse",
+      "name": "Every MIDI file parses with mido",
+      "status": "pass",
+      "detail": "50/50 parsed with mido 1.3.3",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "meta",
+      "name": "Tempo and 4/4 time-signature meta at tick 0, 480 PPQ, 1/2/4-bar loops",
+      "status": "pass",
+      "detail": "tempo compared within 0.01 BPM after microsecond rounding",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "boundary",
+      "name": "End-of-track at the loop boundary; every note-on has a note-off; no same-pitch collisions",
+      "status": "pass",
+      "detail": "note-on/off pairing done independently from the generator",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "ranges",
+      "name": "Pitches 24-64 (C1-E4), velocities 1-127, positive durations, notes inside the loop",
+      "status": "pass",
+      "detail": "700 notes checked",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "monophony",
+      "name": "Monophonic; overlaps only in legato-labeled patterns, each at most 1/8 beat, never same pitch",
+      "status": "pass",
+      "detail": "5 legato patterns, 31 intentional overlaps total",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "csv_match",
+      "name": "Note-event CSV and index CSV match the parsed MIDI exactly (pitch, tick, duration, velocity, names)",
+      "status": "pass",
+      "detail": "beats cross-checked against ticks; note names converted back to MIDI numbers (MIDI 60 = C4)",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "scale",
+      "name": "Every out-of-scale note is labeled as an intentional chromatic departure (recomputed from key + scale)",
+      "status": "pass",
+      "detail": "9 chromatic notes, all labeled",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "distinct",
+      "name": "No exact, transposed, re-velocitied, re-tempoed, or near-duplicate patterns",
+      "status": "pass",
+      "detail": "rhythm+duration twins: 0; identical onset grids: 0 (none); closest onset grids BP13/BP34 Jaccard 0.94; closest onset+pitch-class tokens BP08/BP31 Jaccard 0.50 (fail threshold 0.85)",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "coverage",
+      "name": "All seven groove families present; loop lengths span 1, 2, and 4 bars",
+      "status": "pass",
+      "detail": "families acid 7, offbeat 7, rolling 8, sparse 7, staccato 7, sustained 6, syncopated 8; bars 1-bar 12, 2-bar 25, 4-bar 13",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "ghost_proxy",
+      "name": "Proxy: every ghost note (velocity < 90) is no longer than the pattern's median normal note",
+      "status": "pass",
+      "detail": "11 ghost notes checked; this is a proxy, not a listening test",
+      "problems": [],
+      "problem_count": 0
+    },
+    {
+      "id": "zip",
+      "name": "ZIP passes CRC test and every member is byte-identical to the validated files",
+      "status": "pass",
+      "detail": "basement-protocol-50-bass-midi-Cursor.zip",
+      "problems": [],
+      "problem_count": 0
+    }
+  ],
+  "limitations": [
+    "Musical quality, groove feel, and velocity-insensitive playability are judgments; only the ghost-note proxy is automated.",
+    "Glide behavior on legato overlaps depends on the receiving instrument and cannot be verified from MIDI.",
+    "DAW import was not tested inside commercial DAWs in this environment; files were parsed with mido and @tonejs/midi.",
+    "Near-duplicate detection uses onset and pitch-class set similarity; it cannot judge perceived similarity."
+  ]
+}
