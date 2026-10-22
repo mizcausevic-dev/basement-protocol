@@ -25,7 +25,7 @@ export function Nav({ page = 'home' }: { page?: Page }) {
       <nav className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8" aria-label="Primary">
         <a href="./" className="flex items-center gap-2.5 font-bold tracking-tight text-[color:var(--heading)]">
           <Logo />
-          <span className="text-sm sm:text-base">Basement Protocol</span>
+          <span className="max-w-[8.5rem] truncate text-sm sm:max-w-none sm:text-base">Basement Protocol</span>
         </a>
         <div className="hidden items-center gap-5 text-sm text-muted-foreground lg:flex">
           {page === 'home'
@@ -37,12 +37,12 @@ export function Nav({ page = 'home' }: { page?: Page }) {
             <a key={id} href={href} className={linkClass} aria-current={page === id ? 'page' : undefined}>{label}</a>
           ))}
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex shrink-0 items-center gap-1.5">
           <a
             href={page === 'media' ? 'article.html' : 'media.html'}
-            className="rounded-lg border border-border px-2.5 py-1 text-xs font-medium text-muted-foreground transition-colors hover:text-primary lg:hidden"
+            className="rounded-lg border border-border px-2 py-1 text-xs font-medium text-muted-foreground transition-colors hover:text-primary lg:hidden"
           >
-            {page === 'media' ? 'Article' : 'Media kit'}
+            {page === 'media' ? 'Article' : 'Media'}
           </a>
           <ThemePicker />
           <a
@@ -50,7 +50,7 @@ export function Nav({ page = 'home' }: { page?: Page }) {
             target="_blank"
             rel="noreferrer"
             aria-label="Source on GitHub"
-            className="inline-flex size-8 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:text-primary"
+            className="hidden size-8 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:text-primary sm:inline-flex"
           >
             <GithubMark className="size-4" />
           </a>
