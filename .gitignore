@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules
+dist
+dist-ssr
+*.local
+
+# Copied from pack/ and article/ by scripts/sync-pack.mjs
+public/pack/
+public/article/
+
+# Python
+__pycache__/
+*.pyc
+
+# Deploy tooling and secrets
+.netlify/
+.vercel/
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor and OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.sw?

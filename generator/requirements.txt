@@ -1,0 +1,3 @@
+# The generator itself is dependency-free (standard library only).
+# mido is used only by validate.py as an independent MIDI parser.
+mido==1.3.3

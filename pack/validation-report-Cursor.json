@@ -1,6 +1,6 @@
 {
   "collection": "Basement Protocol",
-  "generated_at_utc": "2026-10-22T05:02:24+00:00",
+  "generated_at_utc": "2026-10-22T05:21:58+00:00",
   "validator": "generator/validate.py with mido 1.3.3 on Python 3.12.3",
   "summary": {
     "checks": 12,
@@ -112,5 +112,13 @@
     "Glide behavior on legato overlaps depends on the receiving instrument and cannot be verified from MIDI.",
     "DAW import was not tested inside commercial DAWs in this environment; files were parsed with mido and @tonejs/midi.",
     "Near-duplicate detection uses onset and pitch-class set similarity; it cannot judge perceived similarity."
-  ]
+  ],
+  "second_parser": {
+    "parser": "@tonejs/midi 2.0.28 on Node v22.23.4",
+    "status": "pass",
+    "files_parsed": 50,
+    "notes_compared": 700,
+    "detail": "PPQ, tempo, 4/4 time signature, end-of-track tick, and every note (pitch, start tick, duration, velocity) compared with the CSVs",
+    "problems": []
+  }
 }

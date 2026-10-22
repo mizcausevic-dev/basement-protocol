@@ -559,6 +559,7 @@ def manifest_entry(p: Pattern, notes: list[Note]) -> dict:
         "scale": p.scale_label,
         "key": f"{p.tonic} {p.scale_label}",
         "root_midi": p.root,
+        "spelling": p.spelling,
         "bars": p.loop_bars,
         "loop_beats": p.loop_bars * 4,
         "grid": {4: "16th", 3: "8th triplet", 6: "16th triplet", 8: "32nd"}[p.grid],

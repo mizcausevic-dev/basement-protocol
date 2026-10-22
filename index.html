@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-theme="cyber" data-mode="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basement Protocol: 50 Free Techno, Acid and DnB Bassline MIDI Files</title>
+    <meta name="description" content="Audition 50 validated, monophonic MIDI bassline loops for techno, acid, drum and bass and bassline house in your browser, then download the pack with CSV note data." />
+    <link rel="canonical" href="https://mizcausevic-dev.github.io/basement-protocol/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#0b0c10" />
+    <meta name="color-scheme" content="dark light" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Basement Protocol" />
+    <meta property="og:title" content="Basement Protocol: 50 validated bassline MIDI files" />
+    <meta property="og:description" content="Fifty hand-composed bass loops for the darker rooms. Hear the real files in the browser, then drag them into your DAW." />
+    <meta property="og:url" content="https://mizcausevic-dev.github.io/basement-protocol/" />
+    <meta property="og:image" content="https://mizcausevic-dev.github.io/basement-protocol/images/og-hero.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Illustration of a concrete basement club with glowing sub-bass waves" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Basement Protocol: 50 validated bassline MIDI files" />
+    <meta name="twitter:description" content="Hear the real MIDI files in the browser, then drag them into your DAW. Free download." />
+    <meta name="twitter:image" content="https://mizcausevic-dev.github.io/basement-protocol/images/og-hero.jpg" />
+
+    <link rel="preload" as="image" href="images/hero-basement.webp" type="image/webp" />
+
+    <script>
+      (function () {
+        var themes = ['cyber', 'bento', 'swiss', 'aqua', 'brutal', 'steel', 'parchment']
+        try {
+          var t = localStorage.getItem('bp-theme')
+          var m = localStorage.getItem('bp-mode')
+          var el = document.documentElement
+          if (t && themes.indexOf(t) > -1) el.dataset.theme = t
+          if (m === 'light' || m === 'dark') {
+            el.dataset.mode = m
+            el.classList.toggle('dark', m === 'dark')
+          }
+        } catch (e) {}
+      })()
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://kineticgain.com/#organization",
+            "name": "Kinetic Gain LLC",
+            "url": "https://kineticgain.com"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://github.com/mizcausevic-dev#person",
+            "name": "Miz Causevic",
+            "url": "https://github.com/mizcausevic-dev",
+            "sameAs": ["https://github.com/mizcausevic-dev"],
+            "worksFor": { "@id": "https://kineticgain.com/#organization" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mizcausevic-dev.github.io/basement-protocol/#website",
+            "url": "https://mizcausevic-dev.github.io/basement-protocol/",
+            "name": "Basement Protocol",
+            "publisher": { "@id": "https://kineticgain.com/#organization" }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://mizcausevic-dev.github.io/basement-protocol/#pack",
+            "name": "Basement Protocol: 50 MIDI basslines",
+            "description": "Fifty monophonic Standard MIDI File bassline loops for techno, acid, drum and bass, and bassline house, with an index CSV, a note-events CSV, and a validation report.",
+            "url": "https://mizcausevic-dev.github.io/basement-protocol/",
+            "image": "https://mizcausevic-dev.github.io/basement-protocol/images/og-hero.jpg",
+            "encodingFormat": "audio/midi",
+            "isAccessibleForFree": true,
+            "inLanguage": "en",
+            "keywords": "MIDI bassline, techno bass MIDI, acid bassline, drum and bass MIDI, bassline house, free MIDI pack",
+            "author": { "@id": "https://github.com/mizcausevic-dev#person" },
+            "publisher": { "@id": "https://kineticgain.com/#organization" },
+            "license": "https://github.com/mizcausevic-dev/basement-protocol/blob/main/LICENSE-PATTERNS.md"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:1rem;font-family:sans-serif">The pattern lab needs JavaScript to play audio. You can still download the pack directly: <a href="pack/basement-protocol-50-bass-midi-Cursor.zip">basement-protocol-50-bass-midi-Cursor.zip</a>.</p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
