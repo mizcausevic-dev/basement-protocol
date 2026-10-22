@@ -17,9 +17,17 @@ expect() {
   fi
 }
 
-for p in / /article.html /pack/manifest-Cursor.json /pack/validation-report-Cursor.json \
+for p in / /article.html /media.html /pack/manifest-Cursor.json /pack/validation-report-Cursor.json \
          /pack/basement-protocol-50-bass-midi-Cursor.zip /pack/midi/BP44_acid-rain-Cursor.mid \
-         /images/og-hero.jpg /sitemap.xml; do
+         /images/og-hero.jpg /sitemap.xml \
+         /media/basement-protocol-commercial-16x9-Cursor.mp4 \
+         /media/basement-protocol-commercial-9x16-Cursor.mp4 \
+         /media/basement-protocol-commercial-1x1-Cursor.mp4 \
+         /media/basement-protocol-commercial-Cursor.vtt \
+         /media/media-manifest-Cursor.json \
+         /media/social/posts-Cursor.json \
+         /media/social/og-card-1200x630-Cursor.jpg \
+         /media/social/basement-protocol-carousel-Cursor.pdf; do
   expect 200 "$p"
 done
 

@@ -26,7 +26,7 @@ node scripts/validate-tonejs.mjs
 npm run build
 
 echo "== preflight: extension allowlist"
-ALLOWED='html|js|css|svg|webp|jpg|png|ico|woff|woff2|json|csv|mid|zip|txt|md|xml'
+ALLOWED='html|js|css|svg|webp|jpg|png|ico|woff|woff2|json|csv|mid|zip|txt|md|xml|mp4|vtt|pdf'
 bad=$(find "$DIST" -type f ! -name '.nojekyll' | grep -Ev "\.(${ALLOWED})$" || true)
 if [[ -n "$bad" ]]; then
   echo "Refusing to deploy files outside the allowlist:" >&2

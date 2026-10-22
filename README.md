@@ -3,6 +3,7 @@
 50 hand-composed, monophonic MIDI bassline loops for techno, acid, drum and bass, bassline house, and electro, plus a browser lab that plays the real files and the open generator that builds them.
 
 - **Live lab:** https://mizcausevic-dev.github.io/basement-protocol/
+- **Media kit:** https://mizcausevic-dev.github.io/basement-protocol/media.html
 - **Article:** https://mizcausevic-dev.github.io/basement-protocol/article.html
 - **Download:** [`pack/basement-protocol-50-bass-midi-Cursor.zip`](pack/basement-protocol-50-bass-midi-Cursor.zip)
 
@@ -53,6 +54,8 @@ npm run dev                                 # http://127.0.0.1:47321
 | `npm run build` | Typecheck and static build into `dist/` |
 | `npm run preview` | Serves `dist/` on port 47322 |
 | `npm run deploy` | Rebuilds, validates, guards `dist/`, and publishes to `gh-pages` |
+| `npm run media` | Renders the soundtrack from pack MIDI, then the commercial, social images, and manifest |
+| `npm run media:social` | Rebuilds social images, the carousel PDF, and the copy sheet |
 
 ## Validation
 
@@ -89,6 +92,31 @@ P("BP44", "Acid Rain", "acid", 130, 33, "phrygian",
 - Stack: Vite 8, React 19, TypeScript, Tailwind CSS 4, shadcn/ui on Base UI, Motion.
 
 No cookies, analytics, or forms. Fonts are self-hosted through Fontsource.
+
+## Media kit
+
+The 30-second spot and the social images live under `media/`. The soundtrack is rendered from BP01, BP11, BP44, and BP50 in `pack/midi` by `media/soundtrack.py`, then loudness-normalized to -14 LUFS integrated and -1.5 dBTP. Headless Chrome steps the HTML composition frame by frame into ffmpeg.
+
+```bash
+pip install -r media/requirements.txt   # numpy, mido 1.3.3
+npm run media                           # soundtrack + videos + social + manifest
+```
+
+Outputs land in `media/out/` and are copied to `public/media/` on `npm run dev` and `npm run build`.
+
+| File | What it is |
+| --- | --- |
+| `media/out/basement-protocol-commercial-{16x9,9x16,1x1}-Cursor.mp4` | 30 s cuts, H.264 + AAC, CRF 23 capped at 8 Mbps |
+| `media/out/basement-protocol-commercial-*-poster-Cursor.jpg` | Poster frames |
+| `media/out/basement-protocol-commercial-Cursor.vtt` | Captions, including sound cues |
+| `media/out/social/*-Cursor.jpg` | Images for Instagram, TikTok, YouTube, X, Facebook, LinkedIn, Pinterest, Reddit, Threads, Bluesky |
+| `media/out/social/basement-protocol-carousel-Cursor.pdf` | 5-slide carousel |
+| `media/out/social/POSTS-Cursor.md` | Per-network copy, alt text, and measured lengths |
+| `media/out/media-manifest-Cursor.json` | Sizes, durations, loudness, and file list for the site |
+
+Those ten networks are the ones that actually carry music-pack discovery: Instagram and TikTok for short video, YouTube for the long cut and a search thumbnail, X and Bluesky for scene posts, Facebook and Threads for the same cut in feed, LinkedIn for the technical write-up, Pinterest for the evergreen pin, and Reddit for production forums (read each subreddit's self-promo rules first).
+
+The media page maps these events but does not wire them: `video_play`, `video_complete`, `asset_download`, `copy_post`. There is no analytics on the site.
 
 ## Deploy
 

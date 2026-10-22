@@ -14,3 +14,10 @@ for (const dir of ['pack', 'article']) {
   cpSync(join(root, dir), dest, { recursive: true })
   console.log(`synced ${dir}/ -> public/${dir}/`)
 }
+const mediaSrc = join(root, 'media', 'out')
+const mediaDest = join(root, 'public', 'media')
+rmSync(mediaDest, { recursive: true, force: true })
+if (existsSync(mediaSrc)) {
+  cpSync(mediaSrc, mediaDest, { recursive: true })
+  console.log('synced media/out/ -> public/media/')
+}

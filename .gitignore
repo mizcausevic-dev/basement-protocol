@@ -4,9 +4,13 @@ dist
 dist-ssr
 *.local
 
-# Copied from pack/ and article/ by scripts/sync-pack.mjs
+# Copied from pack/, article/, and media/out by scripts/sync-pack.mjs
 public/pack/
 public/article/
+public/media/
+
+# Scratch output from the media pipeline (soundtrack WAV, stills, encode tests)
+media/build/
 
 # Python
 __pycache__/
