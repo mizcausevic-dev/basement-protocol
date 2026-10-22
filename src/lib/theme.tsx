@@ -1,3 +1,4 @@
+import { MotionConfig } from 'motion/react'
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 
 export const THEMES = [
@@ -53,7 +54,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const setTheme = useCallback((t: ThemeId) => setState((s) => ({ ...s, theme: t })), [])
   const setMode = useCallback((m: Mode) => setState((s) => ({ ...s, mode: m })), [])
   const value = useMemo(() => ({ theme, mode, setTheme, setMode, revision }), [theme, mode, setTheme, setMode, revision])
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  return (
+    <ThemeContext.Provider value={value}>
+      <MotionConfig reducedMotion="user">{children}</MotionConfig>
+    </ThemeContext.Provider>
+  )
 }
 
 export function useTheme() {
