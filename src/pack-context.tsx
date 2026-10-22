@@ -22,6 +22,11 @@ interface PackState {
 
 const PackContext = createContext<PackState | null>(null)
 
+function patternFromHash(m: Manifest): PatternMeta | undefined {
+  const id = window.location.hash.replace('#', '').toUpperCase()
+  return m.patterns.find((p) => p.id === id)
+}
+
 export function PackProvider({ children }: { children: ReactNode }) {
   const [manifest, setManifest] = useState<Manifest | null>(null)
   const [report, setReport] = useState<ValidationReport | null>(null)
@@ -42,11 +47,13 @@ export function PackProvider({ children }: { children: ReactNode }) {
         if (!alive) return
         setManifest(m)
         setReport(r)
-        const fromHash = window.location.hash.replace('#', '').toUpperCase()
-        const initial = m.patterns.find((p) => p.id === fromHash) ?? m.patterns[0]
+        const linked = patternFromHash(m)
+        const initial = linked ?? m.patterns[0]
         setSelectedId(initial.id)
         setBpmState(initial.bpm)
         bpmRef.current = initial.bpm
+        // No element carries a pattern id, so the browser cannot resolve #BPxx on its own.
+        if (linked) requestAnimationFrame(() => document.getElementById('lab')?.scrollIntoView({ block: 'start' }))
         const results = await Promise.all(m.patterns.map((p) => loadMidi(p).catch(() => null)))
         if (!alive) return
         const map: Record<string, ParsedPattern> = {}
@@ -86,6 +93,16 @@ export function PackProvider({ children }: { children: ReactNode }) {
     if (opts?.scroll) document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     if (opts?.play || engine.playing) void startPattern(meta, meta.bpm)
   }, [manifest, startPattern])
+
+  useEffect(() => {
+    if (!manifest) return
+    const onHash = () => {
+      const linked = patternFromHash(manifest)
+      if (linked) select(linked.id, { scroll: true })
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [manifest, select])
 
   const playSelected = useCallback(async () => {
     if (selected) await startPattern(selected, bpmRef.current)

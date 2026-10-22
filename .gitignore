@@ -29,3 +29,7 @@ npm-debug.log*
 .idea
 .DS_Store
 *.sw?
+
+# Agent tooling scratch output
+agent-tools/
+.playwright-mcp/
