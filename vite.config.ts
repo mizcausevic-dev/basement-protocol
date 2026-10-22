@@ -19,6 +19,7 @@ export default defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         article: resolve(root, 'article.html'),
+        media: resolve(root, 'media.html'),
       },
     },
   },

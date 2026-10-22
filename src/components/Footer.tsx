@@ -19,7 +19,8 @@ export function Footer() {
           <ul className="space-y-2 text-muted-foreground">
             <li><a href={REPO_URL} className="inline-flex items-center gap-1.5 hover:text-primary"><GithubMark className="size-3.5" /> Source on GitHub</a></li>
             <li><a href="article.html" className="hover:text-primary">The article</a></li>
-            <li><a href="#validation" className="hover:text-primary">Validation report</a></li>
+            <li><a href="media.html" className="hover:text-primary">Media kit</a></li>
+            <li><a href="./#validation" className="hover:text-primary">Validation report</a></li>
           </ul>
         </div>
         <div className="text-sm">

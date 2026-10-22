@@ -47,7 +47,7 @@ export function ArticlePage() {
   return (
     <>
       <motion.div aria-hidden="true" style={{ scaleX: progress }} className="fixed inset-x-0 top-0 z-50 h-0.5 origin-left bg-primary" />
-      <Nav home="./" onArticle />
+      <Nav page="article" />
       <main className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_260px] lg:px-8 lg:py-16">
         <article className="min-w-0">
           <div className="mx-auto max-w-[720px]">

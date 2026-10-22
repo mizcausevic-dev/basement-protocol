@@ -10,23 +10,40 @@ const LINKS = [
   ['Brief', '#brief'],
 ] as const
 
-export function Nav({ home = './', onArticle = false }: { home?: string; onArticle?: boolean }) {
+type Page = 'home' | 'article' | 'media'
+
+const PAGES = [
+  ['media', 'Media kit', 'media.html'],
+  ['article', 'Article', 'article.html'],
+] as const
+
+const linkClass = 'transition-colors hover:text-primary aria-[current=page]:text-primary aria-[current=page]:font-semibold'
+
+export function Nav({ page = 'home' }: { page?: Page }) {
   return (
     <header className="glass sticky top-0 z-40">
       <nav className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8" aria-label="Primary">
-        <a href={home} className="flex items-center gap-2.5 font-bold tracking-tight text-[color:var(--heading)]">
+        <a href="./" className="flex items-center gap-2.5 font-bold tracking-tight text-[color:var(--heading)]">
           <Logo />
           <span className="text-sm sm:text-base">Basement Protocol</span>
         </a>
         <div className="hidden items-center gap-5 text-sm text-muted-foreground lg:flex">
-          {!onArticle && LINKS.map(([label, href]) => (
-            <a key={href} href={href} className="transition-colors hover:text-primary">{label}</a>
+          {page === 'home'
+            ? LINKS.map(([label, href]) => (
+                <a key={href} href={href} className={linkClass}>{label}</a>
+              ))
+            : <a href="./" className={linkClass}>Lab</a>}
+          {PAGES.map(([id, label, href]) => (
+            <a key={id} href={href} className={linkClass} aria-current={page === id ? 'page' : undefined}>{label}</a>
           ))}
-          <a href={onArticle ? './' : 'article.html'} className="transition-colors hover:text-primary">
-            {onArticle ? 'Back to the lab' : 'Article'}
-          </a>
         </div>
         <div className="flex items-center gap-1.5">
+          <a
+            href={page === 'media' ? 'article.html' : 'media.html'}
+            className="rounded-lg border border-border px-2.5 py-1 text-xs font-medium text-muted-foreground transition-colors hover:text-primary lg:hidden"
+          >
+            {page === 'media' ? 'Article' : 'Media kit'}
+          </a>
           <ThemePicker />
           <a
             href={REPO_URL}

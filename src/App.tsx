@@ -1,5 +1,6 @@
 import { ArticleTeaser } from '@/components/ArticleTeaser'
 import { Brief } from '@/components/Brief'
+import { CommercialTeaser } from '@/components/CommercialTeaser'
 import { DropBand } from '@/components/DropBand'
 import { Footer } from '@/components/Footer'
 import { GrooveMap } from '@/components/GrooveMap'
@@ -31,6 +32,7 @@ export default function App() {
         <Validation />
         <DropBand />
         <Brief />
+        <CommercialTeaser />
         <ArticleTeaser />
       </main>
       <Footer />
