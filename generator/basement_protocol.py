@@ -26,6 +26,7 @@ SLIDE_OVERLAP_TICKS = 30  # 1/16 of a beat: long enough for glide-capable synths
 MIN_PITCH, MAX_PITCH = 24, 64  # C1..E4 in scientific pitch notation (MIDI 60 = C4)
 PACK_NAME = "basement-protocol-50-bass-midi-Cursor"
 SUFFIX = "-Cursor"
+ZIP_DATE_TIME = (2026, 10, 22, 0, 0, 0)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "pack"
@@ -667,11 +668,16 @@ def write_outputs() -> dict:
     (OUT / f"manifest{SUFFIX}.json").write_text(json.dumps(meta_doc, indent=2), encoding="utf-8")
 
     zip_path = OUT / f"{PACK_NAME}.zip"
+    members = [(midi_dir / p.filename, f"{PACK_NAME}/midi/{p.filename}") for p in PATTERNS]
+    members += [(path, f"{PACK_NAME}/{path.name}") for path in (index_path, events_path, readme)]
+    # Fixed timestamps and permissions keep the ZIP byte-identical across rebuilds.
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-        for p in PATTERNS:
-            zf.write(midi_dir / p.filename, f"{PACK_NAME}/midi/{p.filename}")
-        for path in (index_path, events_path, readme):
-            zf.write(path, f"{PACK_NAME}/{path.name}")
+        for src, arcname in members:
+            info = zipfile.ZipInfo(arcname, date_time=ZIP_DATE_TIME)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            info.create_system = 3
+            zf.writestr(info, src.read_bytes())
     return meta_doc
 
 
