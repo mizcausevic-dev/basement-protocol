@@ -1,0 +1,741 @@
+{
+  "site": "https://mizcausevic-dev.github.io/basement-protocol/",
+  "media_page": "https://mizcausevic-dev.github.io/basement-protocol/media.html",
+  "limits_as_of": "2026-10",
+  "networks": [
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "why": "Largest visual feed for producers; carousels, Reels, and Stories each get a native size.",
+      "assets": [
+        {
+          "id": "instagram-feed",
+          "file": "instagram-feed-1080x1350-Cursor.jpg",
+          "use": "Feed post (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 174388,
+          "alt": "Poster for Basement Protocol. Headline: Fifty basslines. Built for the basement. A piano roll shows pattern BP44 Acid Rain, a one-bar acid line in A Phrygian at 130 BPM, with glowing slide curves between notes. Stats read 50 MIDI files, 700 notes, 7 groove families, above the site address."
+        },
+        {
+          "id": "instagram-story",
+          "file": "instagram-story-1080x1920-Cursor.jpg",
+          "use": "Story (9:16)",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 233014,
+          "alt": "Vertical story card. Headline: 50 free bassline MIDI files. A tall piano roll shows the first bar of pattern BP11 Marrow, a rolling four-bar line in A Phrygian at 128 BPM. Stats and a button-style label read: Tap the link to open the lab."
+        },
+        {
+          "id": "carousel-01",
+          "file": "carousel-01-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 1 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 200761,
+          "alt": "Carousel slide 1 of 5. Headline: 50 free bassline MIDI files. Built for the basement. Small piano rolls from four patterns run across the slide, with a prompt to swipe."
+        },
+        {
+          "id": "carousel-02",
+          "file": "carousel-02-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 2 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 199198,
+          "alt": "Carousel slide 2 of 5. Seven groove families with a bar for how many patterns each holds: sparse 7, rolling 8, offbeat 7, syncopated 8, staccato 7, sustained 6, acid 7."
+        },
+        {
+          "id": "carousel-03",
+          "file": "carousel-03-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 3 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 160110,
+          "alt": "Carousel slide 3 of 5. Headline: Every note is in the file. A large piano roll of BP44 Acid Rain with its slides highlighted, plus its key, tempo, length, and note count."
+        },
+        {
+          "id": "carousel-04",
+          "file": "carousel-04-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 4 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 219995,
+          "alt": "Carousel slide 4 of 5. Headline: Validated like software. Three results with check marks: 12 of 12 checks pass, a second parser agrees on all 700 notes, byte-identical on every rebuild."
+        },
+        {
+          "id": "carousel-05",
+          "file": "carousel-05-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 5 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 212276,
+          "alt": "Carousel slide 5 of 5. A phone screenshot of the pattern lab playing BP44 Acid Rain. Text: Audition every file in your browser. Then drag the .mid into your DAW. Free. The site address is below."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Carousel post",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "carousel-01",
+            "carousel-02",
+            "carousel-03",
+            "carousel-04",
+            "carousel-05"
+          ],
+          "notes": null,
+          "fields": {
+            "caption": "50 free bassline MIDI files. Built for the basement.\n\nSwipe for what's inside:\n1. Seven groove families, from sparse dub pressure to 303 acid\n2. Every note is in the file: real 1, 2, and 4-bar loops with tempo and key\n3. Validated like software: 12 of 12 checks pass, and a second parser agrees on all 700 notes\n4. A browser lab that plays the real files before you download\n\nRoyalty-free in your own tracks. Link in bio.\n\n#techno #acidhouse #midi #musicproducer #bassline"
+          },
+          "checks": [
+            {
+              "field": "caption",
+              "length": 472,
+              "max": 2200,
+              "unit": "characters",
+              "hashtags": 5,
+              "maxHashtags": 5,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "label": "Reel",
+          "video": "9x16",
+          "pdf": null,
+          "assets": [
+            "instagram-feed"
+          ],
+          "notes": "Use instagram-feed as the grid cover (4:5 crop of the Reel).",
+          "fields": {
+            "caption": "Thirty seconds, four patterns from the pack: BP01 Concrete Breath, BP11 Marrow, BP44 Acid Rain, and BP50 Last Call. The bass you hear is rendered from the pack's own MIDI files.\n\n50 free bassline MIDI files. Link in bio.\n\n#techno #acidhouse #midi #musicproducer #bassline"
+          },
+          "checks": [
+            {
+              "field": "caption",
+              "length": 271,
+              "max": 2200,
+              "unit": "characters",
+              "hashtags": 5,
+              "maxHashtags": 5,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "label": "Story",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "instagram-story"
+          ],
+          "notes": "Add a link sticker pointing to https://mizcausevic-dev.github.io/basement-protocol/ over the button area. Keep stickers out of the top 250 px and bottom 420 px.",
+          "fields": {},
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "why": "Producer content travels on sound; the vertical cut leads with the bass.",
+      "assets": [
+        {
+          "id": "tiktok-cover",
+          "file": "tiktok-cover-1080x1920-Cursor.jpg",
+          "use": "Video cover (9:16)",
+          "width": 1080,
+          "height": 1920,
+          "bytes": 227521,
+          "alt": "Vertical cover. Headline: Every note is in the file. A piano roll of BP44 Acid Rain with slide curves. Text: 50 free bassline MIDI files. The soundtrack is played from the pack itself. Link in bio."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Video post",
+          "video": "9x16",
+          "pdf": null,
+          "assets": [
+            "tiktok-cover"
+          ],
+          "notes": "Upload the 9:16 MP4 and pick tiktok-cover as the cover image. Burned-in captions are not used; upload the VTT text as TikTok captions if you want them.",
+          "fields": {
+            "caption": "Every bass note in this video comes straight from the MIDI files in the pack. 50 free basslines for techno, acid, and drum and bass, with a browser lab that plays the real files. Link in bio.\n\n#musicproducer #techno #acid #midi #producertok"
+          },
+          "checks": [
+            {
+              "field": "caption",
+              "length": 240,
+              "max": 2200,
+              "unit": "characters",
+              "hashtags": 5,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "why": "Search for \"free MIDI pack\" lands here; the trailer and Shorts cut both fit.",
+      "assets": [
+        {
+          "id": "youtube-thumbnail",
+          "file": "youtube-thumbnail-1280x720-Cursor.jpg",
+          "use": "Video thumbnail (16:9)",
+          "width": 1280,
+          "height": 720,
+          "bytes": 130175,
+          "alt": "Thumbnail with oversized text: 50 free basslines, MIDI. A speaker cone glows on the right behind a short acid piano roll."
+        },
+        {
+          "id": "youtube-banner",
+          "file": "youtube-banner-2560x1440-Cursor.jpg",
+          "use": "Channel banner (safe area 1546 x 423 centered)",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 203878,
+          "alt": "Channel banner. The Basement Protocol logo and name, the line 50 free bassline MIDI files, and the site address, centered over a dark strip of piano rolls from four patterns."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Video",
+          "video": "16x9",
+          "pdf": null,
+          "assets": [
+            "youtube-thumbnail"
+          ],
+          "notes": "Upload basement-protocol-commercial-Cursor.vtt as the English subtitle track.",
+          "fields": {
+            "title": "Basement Protocol: 50 Free Bassline MIDI Files (30-second trailer)",
+            "description": "Basement Protocol is a free pack of 50 bassline MIDI files for techno, acid house, dub, and drum and bass. Every bass note in this trailer is rendered from the pack's own MIDI files.\n\nPatterns heard:\n0:00 BP01 Concrete Breath (sparse, A Aeolian)\n0:07 BP11 Marrow (rolling, A Phrygian)\n0:15 BP44 Acid Rain (acid, A Phrygian, legato slides)\n0:22 BP50 Last Call (acid build, A Aeolian)\n\nWhat's in the pack:\n- 50 loops of 1, 2, or 4 bars, 105 to 174 BPM, with tempo and key in every file\n- Seven groove families: sparse, rolling, offbeat, syncopated, staccato, sustained, acid\n- CSV exports of all 700 notes and a validation report: 12 of 12 checks pass, and a second parser agrees on every note\n\nAudition every pattern in your browser, then download the ZIP:\nhttps://mizcausevic-dev.github.io/basement-protocol/\n\nSource code (MIT): https://github.com/mizcausevic-dev/basement-protocol\n\nPatterns are royalty-free in your own productions. Please don't resell them as a standalone pack.",
+            "tags": "MIDI pack, free MIDI, bassline MIDI, techno bass, acid bass, drum and bass, music production, Web Audio"
+          },
+          "checks": [
+            {
+              "field": "title",
+              "length": 66,
+              "max": 100,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "description",
+              "length": 980,
+              "max": 5000,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "tags",
+              "length": 103,
+              "max": 500,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "label": "Short",
+          "video": "9x16",
+          "pdf": null,
+          "assets": [],
+          "notes": null,
+          "fields": {
+            "title": "50 free bassline MIDI files, played from the files themselves",
+            "description": "Four patterns from Basement Protocol, a free pack of 50 bassline MIDI files. Audition all of them in the browser: https://mizcausevic-dev.github.io/basement-protocol/"
+          },
+          "checks": [
+            {
+              "field": "title",
+              "length": 61,
+              "max": 100,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "description",
+              "length": 166,
+              "max": 5000,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "why": "Fast link sharing with music-tech and developer audiences.",
+      "assets": [
+        {
+          "id": "x-post",
+          "file": "x-post-1600x900-Cursor.jpg",
+          "use": "In-feed image (16:9)",
+          "width": 1600,
+          "height": 900,
+          "bytes": 156883,
+          "alt": "Wide card. Headline: 50 free bassline MIDI files. Subhead: Real 1, 2, and 4-bar loops with tempo and key inside. Validated like software. On the right, a piano roll of BP44 Acid Rain with glowing slides."
+        },
+        {
+          "id": "x-header",
+          "file": "x-header-1500x500-Cursor.jpg",
+          "use": "Profile header (3:1)",
+          "width": 1500,
+          "height": 500,
+          "bytes": 78460,
+          "alt": "Profile header. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address over a strip of piano rolls."
+        },
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Post",
+          "video": "16x9",
+          "pdf": null,
+          "assets": [
+            "x-post"
+          ],
+          "notes": "Attach either x-post or the 16:9 MP4, not both. The link card uses og-card automatically.",
+          "fields": {
+            "text": "50 free bassline MIDI files for techno, acid, and DnB.\n\nReal 1, 2, and 4-bar loops with tempo and key in every file. Play them in your browser, then drag the .mid into your DAW.\n\n12 of 12 checks pass. A second parser agrees on all 700 notes.\n\nhttps://mizcausevic-dev.github.io/basement-protocol/"
+          },
+          "checks": [
+            {
+              "field": "text",
+              "length": 266,
+              "max": 280,
+              "unit": "X weighted characters (links count as 23)",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        },
+        {
+          "label": "Profile header",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "x-header"
+          ],
+          "notes": "The avatar covers the lower left on desktop, so the art sits right of center.",
+          "fields": {},
+          "checks": []
+        }
+      ]
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "why": "Producer groups and the link-preview card that most other sites reuse.",
+      "assets": [
+        {
+          "id": "facebook-feed",
+          "file": "facebook-feed-1080x1350-Cursor.jpg",
+          "use": "Feed post (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 229726,
+          "alt": "Feed poster. Headline: Seven groove families. Fifty loops. A bar chart counts patterns per family: sparse 7, rolling 8, offbeat 7, syncopated 8, staccato 7, sustained 6, acid 7. The site address is at the bottom."
+        },
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Feed post",
+          "video": "1x1",
+          "pdf": null,
+          "assets": [
+            "facebook-feed"
+          ],
+          "notes": "Post the image or the 1:1 MP4. A plain link post pulls og-card.",
+          "fields": {
+            "text": "Basement Protocol is a free pack of 50 bassline MIDI files for techno, acid house, dub, and drum and bass.\n\nEach loop is 1, 2, or 4 bars with tempo and key written into the file. The site has a lab that plays the real .mid files, a groove map of all 50 patterns, and the full validation report.\n\nRoyalty-free in your own tracks.\nhttps://mizcausevic-dev.github.io/basement-protocol/"
+          },
+          "checks": [
+            {
+              "field": "text",
+              "length": 381,
+              "max": 5000,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "why": "The validated-like-software story is a fit for engineering and music-tech readers; the carousel ships as a PDF document post.",
+      "assets": [
+        {
+          "id": "carousel-01",
+          "file": "carousel-01-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 1 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 200761,
+          "alt": "Carousel slide 1 of 5. Headline: 50 free bassline MIDI files. Built for the basement. Small piano rolls from four patterns run across the slide, with a prompt to swipe."
+        },
+        {
+          "id": "carousel-02",
+          "file": "carousel-02-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 2 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 199198,
+          "alt": "Carousel slide 2 of 5. Seven groove families with a bar for how many patterns each holds: sparse 7, rolling 8, offbeat 7, syncopated 8, staccato 7, sustained 6, acid 7."
+        },
+        {
+          "id": "carousel-03",
+          "file": "carousel-03-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 3 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 160110,
+          "alt": "Carousel slide 3 of 5. Headline: Every note is in the file. A large piano roll of BP44 Acid Rain with its slides highlighted, plus its key, tempo, length, and note count."
+        },
+        {
+          "id": "carousel-04",
+          "file": "carousel-04-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 4 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 219995,
+          "alt": "Carousel slide 4 of 5. Headline: Validated like software. Three results with check marks: 12 of 12 checks pass, a second parser agrees on all 700 notes, byte-identical on every rebuild."
+        },
+        {
+          "id": "carousel-05",
+          "file": "carousel-05-1080x1350-Cursor.jpg",
+          "use": "Carousel slide 5 of 5 (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 212276,
+          "alt": "Carousel slide 5 of 5. A phone screenshot of the pattern lab playing BP44 Acid Rain. Text: Audition every file in your browser. Then drag the .mid into your DAW. Free. The site address is below."
+        },
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        },
+        {
+          "id": "linkedin-post",
+          "file": "linkedin-post-1080x1350-Cursor.jpg",
+          "use": "Feed post (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 234648,
+          "alt": "Feed poster. Headline: A MIDI pack, validated like software. A panel lists validation checks with check marks, including parsing, tempo and meter, loop boundaries, pitch range, monophony, and a second parser comparing all 700 notes. Stats read 50 MIDI files, 700 notes, 7 groove families."
+        },
+        {
+          "id": "linkedin-cover",
+          "file": "linkedin-cover-1584x396-Cursor.jpg",
+          "use": "Profile cover (4:1)",
+          "width": 1584,
+          "height": 396,
+          "bytes": 65923,
+          "alt": "Profile cover. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address on the right over a strip of piano rolls."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Document post (PDF carousel)",
+          "video": null,
+          "pdf": "basement-protocol-carousel-Cursor.pdf",
+          "assets": [
+            "linkedin-post",
+            "linkedin-cover"
+          ],
+          "notes": "Attach basement-protocol-carousel-Cursor.pdf as a document, titled \"Basement Protocol: 50 MIDI basslines, validated like software\". Use linkedin-post for a single-image version.",
+          "fields": {
+            "text": "I shipped a MIDI pack the way I would ship software.\n\nBasement Protocol is 50 bassline MIDI files for underground electronic music. The part this audience may care about is how it was built:\n\n• Patterns are written in a small step-sequencer text format, not drawn by hand\n• A deterministic Python generator turns them into MIDI, and a rebuild produces byte-identical files\n• A validator runs 12 checks on every build: parsing, tempo and meter, loop boundaries, pitch range, monophony, scale labels, duplicates, and the ZIP itself\n• A second, independent parser (@tonejs/midi) reads all 700 notes again and compares them with the CSV exports\n\nThe site plays the actual files in the browser with the Web Audio API, so what you hear is what you download.\n\nFree, and royalty-free in your own tracks. The code is MIT licensed.\n\nSite: https://mizcausevic-dev.github.io/basement-protocol/\nCode: https://github.com/mizcausevic-dev/basement-protocol\n\n#MusicTech #MIDI #WebAudio"
+          },
+          "checks": [
+            {
+              "field": "text",
+              "length": 968,
+              "max": 3000,
+              "unit": "characters",
+              "hashtags": 3,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "why": "Evergreen search traffic for production references; the tall infographic pin suits it.",
+      "assets": [
+        {
+          "id": "pinterest-pin",
+          "file": "pinterest-pin-1000x1500-Cursor.jpg",
+          "use": "Standard pin (2:3)",
+          "width": 1000,
+          "height": 1500,
+          "bytes": 245608,
+          "alt": "Infographic pin titled 7 groove families, 50 free bassline MIDI files. Each family has a short description, a pattern count, and a small piano roll of one real pattern: BP07 Grime Pulse, BP08 Gallop Protocol, BP21 Double Offbeat, BP23 Tresillo Grind, BP33 Morse Floor, BP42 Cinder Drone, and BP46 Resonance Riot."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Pin",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "pinterest-pin"
+          ],
+          "notes": "Board suggestion: Music Production. Destination link: the site.",
+          "fields": {
+            "title": "50 Free Bassline MIDI Files: 7 Groove Families for Techno and Acid",
+            "description": "A free pack of 50 bassline MIDI loops for techno, acid house, dub, and drum and bass, sorted into seven groove families: sparse, rolling, offbeat, syncopated, staccato, sustained, and acid. Each file is a 1, 2, or 4-bar loop with tempo and key inside. Play every pattern in your browser, then download the .mid files. Royalty-free in your own tracks.",
+            "link": "https://mizcausevic-dev.github.io/basement-protocol/"
+          },
+          "checks": [
+            {
+              "field": "title",
+              "length": 66,
+              "max": 100,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "description",
+              "length": 350,
+              "max": 500,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "why": "Where producers ask for free MIDI; the post is written to inform first, with limits stated.",
+      "assets": [
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        },
+        {
+          "id": "reddit-post",
+          "file": "reddit-post-1080x1080-Cursor.jpg",
+          "use": "Image post (1:1)",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 134362,
+          "alt": "Pattern spotlight for BP44 Acid Rain: a full one-bar piano roll with accent notes and slide curves, and a data panel listing A Phrygian, 130 BPM, 1 bar, 14 notes, acid family, legato slides."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Image post with body",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "reddit-post"
+          ],
+          "notes": "Read each subreddit's self-promotion rules first. Many production subreddits limit promotional posts to weekly threads.",
+          "fields": {
+            "title": "I made 50 free bassline MIDI loops (techno, acid, DnB) and a browser lab that plays the actual files",
+            "body": "Basement Protocol is a free pack of 50 monophonic bassline MIDI files. The image is BP44 Acid Rain, one of the seven acid patterns.\n\nWhat's in it:\n- 50 loops of 1, 2, or 4 bars, 105 to 174 BPM, with tempo and key in each file\n- Seven groove families: sparse, rolling, offbeat, syncopated, staccato, sustained, acid\n- 5 legato patterns whose notes overlap slightly, for synths that glide on overlapping notes\n- CSV exports of every note and a validation report (12 of 12 checks, plus a second parser comparing all 700 notes)\n\nWhat I couldn't test: imports inside commercial DAWs. The files were parsed with mido and @tonejs/midi. If one misbehaves in your DAW, I'd like to know.\n\nRoyalty-free in your own tracks; please don't resell them as a standalone pack.\n\nLab and download: https://mizcausevic-dev.github.io/basement-protocol/\nSource: https://github.com/mizcausevic-dev/basement-protocol"
+          },
+          "checks": [
+            {
+              "field": "title",
+              "length": 100,
+              "max": 300,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "body",
+              "length": 891,
+              "max": 40000,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "threads",
+      "name": "Threads",
+      "why": "Conversational reach from Instagram audiences, one topic tag per post.",
+      "assets": [
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        },
+        {
+          "id": "threads-post",
+          "file": "threads-post-1080x1350-Cursor.jpg",
+          "use": "Feed post (4:5)",
+          "width": 1080,
+          "height": 1350,
+          "bytes": 205287,
+          "alt": "Feed poster. Headline: Hear it before you download it. A piano roll shows BP29 Clave Dread, a one-bar syncopated line in B flat Phrygian at 122 BPM. Stats read 50 MIDI files, 700 notes, 7 groove families."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Post",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "threads-post"
+          ],
+          "notes": null,
+          "fields": {
+            "text": "I built a free pack of 50 bassline MIDI files for underground electronic music.\n\nSeven groove families: sparse, rolling, offbeat, syncopated, staccato, sustained, and acid. Loops of 1, 2, or 4 bars between 105 and 174 BPM, with tempo and key written into each file.\n\nThere's a browser lab that plays the actual .mid files, so you can hear a pattern before you download anything.\n\nmizcausevic-dev.github.io/basement-protocol",
+            "tag": "Music Production"
+          },
+          "checks": [
+            {
+              "field": "text",
+              "length": 423,
+              "max": 500,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            },
+            {
+              "field": "tag",
+              "length": 16,
+              "max": 50,
+              "unit": "characters",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bluesky",
+      "name": "Bluesky",
+      "why": "An active music-tech and open-source crowd that rewards plain, specific posts.",
+      "assets": [
+        {
+          "id": "og-card",
+          "file": "og-card-1200x630-Cursor.jpg",
+          "use": "Link preview (1.91:1), also the site og:image",
+          "width": 1200,
+          "height": 630,
+          "bytes": 95080,
+          "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+        },
+        {
+          "id": "bluesky-post",
+          "file": "bluesky-post-1080x1080-Cursor.jpg",
+          "use": "Image post (1:1)",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 200149,
+          "alt": "Square card titled Validated like software. Twelve validation checks are listed with check marks, from 50 files with matching IDs through to the ZIP matching the validated files byte for byte. The footer reads 12 of 12 pass and gives the site address."
+        },
+        {
+          "id": "bluesky-banner",
+          "file": "bluesky-banner-3000x1000-Cursor.jpg",
+          "use": "Profile banner (3:1, art centered)",
+          "width": 3000,
+          "height": 1000,
+          "bytes": 182770,
+          "alt": "Profile banner. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address, centered over a strip of piano rolls."
+        }
+      ],
+      "posts": [
+        {
+          "label": "Post",
+          "video": null,
+          "pdf": null,
+          "assets": [
+            "bluesky-post",
+            "bluesky-banner"
+          ],
+          "notes": "bluesky-banner is the profile banner; the avatar covers the lower left, so the art is centered.",
+          "fields": {
+            "text": "Fifty free bassline MIDI files, built for the basement. Seven groove families from sparse dub to 303 acid, 700 notes, and two independent parsers that check every one.\n\nAudition them in your browser before you download:\nmizcausevic-dev.github.io/basement-protocol"
+          },
+          "checks": [
+            {
+              "field": "text",
+              "length": 263,
+              "max": 300,
+              "unit": "graphemes",
+              "hashtags": 0,
+              "maxHashtags": null,
+              "ok": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "carousel_pdf": "basement-protocol-carousel-Cursor.pdf",
+  "problems": []
+}

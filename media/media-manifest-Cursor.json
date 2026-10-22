@@ -1,0 +1,363 @@
+{
+  "title": "Basement Protocol: 50 free bassline MIDI files",
+  "duration_s": 30,
+  "fps": 30,
+  "captions": "basement-protocol-commercial-Cursor.vtt",
+  "soundtrack": "Rendered offline by media/soundtrack.py from BP01, BP11, BP44, and BP50 in pack/midi, then loudness-normalized to -14 LUFS integrated, -1.5 dBTP.",
+  "videos": [
+    {
+      "ratio": "16x9",
+      "label": "Widescreen 16:9",
+      "use": "YouTube, X, LinkedIn, Facebook, Bluesky, Reddit, and the site",
+      "width": 1920,
+      "height": 1080,
+      "file": "basement-protocol-commercial-16x9-Cursor.mp4",
+      "poster": "basement-protocol-commercial-16x9-poster-Cursor.jpg",
+      "bytes": 18670304,
+      "duration_s": 30,
+      "bitrate_kbps": 4979,
+      "video": "h264 1920x1080 30 fps",
+      "audio": "aac 48000 Hz stereo",
+      "loudness": {
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -3.3
+      }
+    },
+    {
+      "ratio": "9x16",
+      "label": "Vertical 9:16",
+      "use": "TikTok, Instagram Reels and Stories, YouTube Shorts, Facebook Reels",
+      "width": 1080,
+      "height": 1920,
+      "file": "basement-protocol-commercial-9x16-Cursor.mp4",
+      "poster": "basement-protocol-commercial-9x16-poster-Cursor.jpg",
+      "bytes": 14992369,
+      "duration_s": 30,
+      "bitrate_kbps": 3998,
+      "video": "h264 1080x1920 30 fps",
+      "audio": "aac 48000 Hz stereo",
+      "loudness": {
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -3.3
+      }
+    },
+    {
+      "ratio": "1x1",
+      "label": "Square 1:1",
+      "use": "Instagram and Facebook feed, LinkedIn, Threads",
+      "width": 1080,
+      "height": 1080,
+      "file": "basement-protocol-commercial-1x1-Cursor.mp4",
+      "poster": "basement-protocol-commercial-1x1-poster-Cursor.jpg",
+      "bytes": 11193902,
+      "duration_s": 30,
+      "bitrate_kbps": 2985,
+      "video": "h264 1080x1080 30 fps",
+      "audio": "aac 48000 Hz stereo",
+      "loudness": {
+        "integrated_lufs": -14.2,
+        "true_peak_dbfs": -3.3
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": "instagram-feed",
+      "network": "instagram",
+      "also": [],
+      "layout": "poster",
+      "use": "Feed post (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/instagram-feed-1080x1350-Cursor.jpg",
+      "preview": "social/previews/instagram-feed.webp",
+      "bytes": 174388,
+      "alt": "Poster for Basement Protocol. Headline: Fifty basslines. Built for the basement. A piano roll shows pattern BP44 Acid Rain, a one-bar acid line in A Phrygian at 130 BPM, with glowing slide curves between notes. Stats read 50 MIDI files, 700 notes, 7 groove families, above the site address."
+    },
+    {
+      "id": "instagram-story",
+      "network": "instagram",
+      "also": [],
+      "layout": "story",
+      "use": "Story (9:16)",
+      "width": 1080,
+      "height": 1920,
+      "file": "social/instagram-story-1080x1920-Cursor.jpg",
+      "preview": "social/previews/instagram-story.webp",
+      "bytes": 233014,
+      "alt": "Vertical story card. Headline: 50 free bassline MIDI files. A tall piano roll shows the first bar of pattern BP11 Marrow, a rolling four-bar line in A Phrygian at 128 BPM. Stats and a button-style label read: Tap the link to open the lab."
+    },
+    {
+      "id": "carousel-01",
+      "network": "instagram",
+      "also": [
+        "linkedin"
+      ],
+      "layout": "slide",
+      "use": "Carousel slide 1 of 5 (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/carousel-01-1080x1350-Cursor.jpg",
+      "preview": "social/previews/carousel-01.webp",
+      "bytes": 200761,
+      "alt": "Carousel slide 1 of 5. Headline: 50 free bassline MIDI files. Built for the basement. Small piano rolls from four patterns run across the slide, with a prompt to swipe."
+    },
+    {
+      "id": "carousel-02",
+      "network": "instagram",
+      "also": [
+        "linkedin"
+      ],
+      "layout": "slide",
+      "use": "Carousel slide 2 of 5 (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/carousel-02-1080x1350-Cursor.jpg",
+      "preview": "social/previews/carousel-02.webp",
+      "bytes": 199198,
+      "alt": "Carousel slide 2 of 5. Seven groove families with a bar for how many patterns each holds: sparse 7, rolling 8, offbeat 7, syncopated 8, staccato 7, sustained 6, acid 7."
+    },
+    {
+      "id": "carousel-03",
+      "network": "instagram",
+      "also": [
+        "linkedin"
+      ],
+      "layout": "slide",
+      "use": "Carousel slide 3 of 5 (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/carousel-03-1080x1350-Cursor.jpg",
+      "preview": "social/previews/carousel-03.webp",
+      "bytes": 160110,
+      "alt": "Carousel slide 3 of 5. Headline: Every note is in the file. A large piano roll of BP44 Acid Rain with its slides highlighted, plus its key, tempo, length, and note count."
+    },
+    {
+      "id": "carousel-04",
+      "network": "instagram",
+      "also": [
+        "linkedin"
+      ],
+      "layout": "slide",
+      "use": "Carousel slide 4 of 5 (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/carousel-04-1080x1350-Cursor.jpg",
+      "preview": "social/previews/carousel-04.webp",
+      "bytes": 219995,
+      "alt": "Carousel slide 4 of 5. Headline: Validated like software. Three results with check marks: 12 of 12 checks pass, a second parser agrees on all 700 notes, byte-identical on every rebuild."
+    },
+    {
+      "id": "carousel-05",
+      "network": "instagram",
+      "also": [
+        "linkedin"
+      ],
+      "layout": "slide",
+      "use": "Carousel slide 5 of 5 (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/carousel-05-1080x1350-Cursor.jpg",
+      "preview": "social/previews/carousel-05.webp",
+      "bytes": 212276,
+      "alt": "Carousel slide 5 of 5. A phone screenshot of the pattern lab playing BP44 Acid Rain. Text: Audition every file in your browser. Then drag the .mid into your DAW. Free. The site address is below."
+    },
+    {
+      "id": "tiktok-cover",
+      "network": "tiktok",
+      "also": [],
+      "layout": "story",
+      "use": "Video cover (9:16)",
+      "width": 1080,
+      "height": 1920,
+      "file": "social/tiktok-cover-1080x1920-Cursor.jpg",
+      "preview": "social/previews/tiktok-cover.webp",
+      "bytes": 227521,
+      "alt": "Vertical cover. Headline: Every note is in the file. A piano roll of BP44 Acid Rain with slide curves. Text: 50 free bassline MIDI files. The soundtrack is played from the pack itself. Link in bio."
+    },
+    {
+      "id": "youtube-thumbnail",
+      "network": "youtube",
+      "also": [],
+      "layout": "thumb",
+      "use": "Video thumbnail (16:9)",
+      "width": 1280,
+      "height": 720,
+      "file": "social/youtube-thumbnail-1280x720-Cursor.jpg",
+      "preview": "social/previews/youtube-thumbnail.webp",
+      "bytes": 130175,
+      "alt": "Thumbnail with oversized text: 50 free basslines, MIDI. A speaker cone glows on the right behind a short acid piano roll."
+    },
+    {
+      "id": "youtube-banner",
+      "network": "youtube",
+      "also": [],
+      "layout": "banner",
+      "use": "Channel banner (safe area 1546 x 423 centered)",
+      "width": 2560,
+      "height": 1440,
+      "file": "social/youtube-banner-2560x1440-Cursor.jpg",
+      "preview": "social/previews/youtube-banner.webp",
+      "bytes": 203878,
+      "alt": "Channel banner. The Basement Protocol logo and name, the line 50 free bassline MIDI files, and the site address, centered over a dark strip of piano rolls from four patterns."
+    },
+    {
+      "id": "x-post",
+      "network": "x",
+      "also": [],
+      "layout": "wide",
+      "use": "In-feed image (16:9)",
+      "width": 1600,
+      "height": 900,
+      "file": "social/x-post-1600x900-Cursor.jpg",
+      "preview": "social/previews/x-post.webp",
+      "bytes": 156883,
+      "alt": "Wide card. Headline: 50 free bassline MIDI files. Subhead: Real 1, 2, and 4-bar loops with tempo and key inside. Validated like software. On the right, a piano roll of BP44 Acid Rain with glowing slides."
+    },
+    {
+      "id": "x-header",
+      "network": "x",
+      "also": [],
+      "layout": "banner",
+      "use": "Profile header (3:1)",
+      "width": 1500,
+      "height": 500,
+      "file": "social/x-header-1500x500-Cursor.jpg",
+      "preview": "social/previews/x-header.webp",
+      "bytes": 78460,
+      "alt": "Profile header. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address over a strip of piano rolls."
+    },
+    {
+      "id": "facebook-feed",
+      "network": "facebook",
+      "also": [],
+      "layout": "poster",
+      "use": "Feed post (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/facebook-feed-1080x1350-Cursor.jpg",
+      "preview": "social/previews/facebook-feed.webp",
+      "bytes": 229726,
+      "alt": "Feed poster. Headline: Seven groove families. Fifty loops. A bar chart counts patterns per family: sparse 7, rolling 8, offbeat 7, syncopated 8, staccato 7, sustained 6, acid 7. The site address is at the bottom."
+    },
+    {
+      "id": "og-card",
+      "network": "facebook",
+      "also": [
+        "linkedin",
+        "x",
+        "threads",
+        "bluesky",
+        "reddit"
+      ],
+      "layout": "wide",
+      "use": "Link preview (1.91:1), also the site og:image",
+      "width": 1200,
+      "height": 630,
+      "file": "social/og-card-1200x630-Cursor.jpg",
+      "preview": "social/previews/og-card.webp",
+      "bytes": 95080,
+      "alt": "Link preview card. Headline: 50 free bassline MIDI files. Subhead: Audition every file in your browser. Validated like software. A piano roll of BP44 Acid Rain is on the right."
+    },
+    {
+      "id": "linkedin-post",
+      "network": "linkedin",
+      "also": [],
+      "layout": "poster",
+      "use": "Feed post (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/linkedin-post-1080x1350-Cursor.jpg",
+      "preview": "social/previews/linkedin-post.webp",
+      "bytes": 234648,
+      "alt": "Feed poster. Headline: A MIDI pack, validated like software. A panel lists validation checks with check marks, including parsing, tempo and meter, loop boundaries, pitch range, monophony, and a second parser comparing all 700 notes. Stats read 50 MIDI files, 700 notes, 7 groove families."
+    },
+    {
+      "id": "linkedin-cover",
+      "network": "linkedin",
+      "also": [],
+      "layout": "banner",
+      "use": "Profile cover (4:1)",
+      "width": 1584,
+      "height": 396,
+      "file": "social/linkedin-cover-1584x396-Cursor.jpg",
+      "preview": "social/previews/linkedin-cover.webp",
+      "bytes": 65923,
+      "alt": "Profile cover. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address on the right over a strip of piano rolls."
+    },
+    {
+      "id": "pinterest-pin",
+      "network": "pinterest",
+      "also": [],
+      "layout": "families",
+      "use": "Standard pin (2:3)",
+      "width": 1000,
+      "height": 1500,
+      "file": "social/pinterest-pin-1000x1500-Cursor.jpg",
+      "preview": "social/previews/pinterest-pin.webp",
+      "bytes": 245608,
+      "alt": "Infographic pin titled 7 groove families, 50 free bassline MIDI files. Each family has a short description, a pattern count, and a small piano roll of one real pattern: BP07 Grime Pulse, BP08 Gallop Protocol, BP21 Double Offbeat, BP23 Tresillo Grind, BP33 Morse Floor, BP42 Cinder Drone, and BP46 Resonance Riot."
+    },
+    {
+      "id": "reddit-post",
+      "network": "reddit",
+      "also": [],
+      "layout": "spotlight",
+      "use": "Image post (1:1)",
+      "width": 1080,
+      "height": 1080,
+      "file": "social/reddit-post-1080x1080-Cursor.jpg",
+      "preview": "social/previews/reddit-post.webp",
+      "bytes": 134362,
+      "alt": "Pattern spotlight for BP44 Acid Rain: a full one-bar piano roll with accent notes and slide curves, and a data panel listing A Phrygian, 130 BPM, 1 bar, 14 notes, acid family, legato slides."
+    },
+    {
+      "id": "threads-post",
+      "network": "threads",
+      "also": [],
+      "layout": "poster",
+      "use": "Feed post (4:5)",
+      "width": 1080,
+      "height": 1350,
+      "file": "social/threads-post-1080x1350-Cursor.jpg",
+      "preview": "social/previews/threads-post.webp",
+      "bytes": 205287,
+      "alt": "Feed poster. Headline: Hear it before you download it. A piano roll shows BP29 Clave Dread, a one-bar syncopated line in B flat Phrygian at 122 BPM. Stats read 50 MIDI files, 700 notes, 7 groove families."
+    },
+    {
+      "id": "bluesky-post",
+      "network": "bluesky",
+      "also": [],
+      "layout": "checks",
+      "use": "Image post (1:1)",
+      "width": 1080,
+      "height": 1080,
+      "file": "social/bluesky-post-1080x1080-Cursor.jpg",
+      "preview": "social/previews/bluesky-post.webp",
+      "bytes": 200149,
+      "alt": "Square card titled Validated like software. Twelve validation checks are listed with check marks, from 50 files with matching IDs through to the ZIP matching the validated files byte for byte. The footer reads 12 of 12 pass and gives the site address."
+    },
+    {
+      "id": "bluesky-banner",
+      "network": "bluesky",
+      "also": [],
+      "layout": "banner",
+      "use": "Profile banner (3:1, art centered)",
+      "width": 3000,
+      "height": 1000,
+      "file": "social/bluesky-banner-3000x1000-Cursor.jpg",
+      "preview": "social/previews/bluesky-banner.webp",
+      "bytes": 182770,
+      "alt": "Profile banner. Basement Protocol logo and name, 50 free bassline MIDI files, and the site address, centered over a strip of piano rolls."
+    }
+  ],
+  "carousel_pdf": {
+    "file": "social/basement-protocol-carousel-Cursor.pdf",
+    "bytes": 1002739,
+    "pages": 5
+  },
+  "copy_sheet": {
+    "markdown": "social/POSTS-Cursor.md",
+    "json": "social/posts-Cursor.json"
+  }
+}
