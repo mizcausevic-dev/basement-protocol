@@ -190,7 +190,7 @@ function Player({ visible }: { visible: PatternMeta[] }) {
 
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <label className="eyebrow" htmlFor="bpm-slider">Tempo</label>
+              <span id="bpm-label" className="eyebrow">Tempo</span>
               <div className="flex items-center gap-1.5 font-mono text-sm">
                 <span className="text-foreground tabular-nums">{bpm}</span> BPM
                 {bpm !== selected.bpm && (
@@ -200,7 +200,7 @@ function Player({ visible }: { visible: PatternMeta[] }) {
                 )}
               </div>
             </div>
-            <Slider id="bpm-slider" aria-label="Tempo in BPM" min={70} max={190} step={1} value={[bpm]} onValueChange={(v) => setBpm(first(v))} />
+            <Slider aria-labelledby="bpm-label" min={70} max={190} step={1} value={[bpm]} onValueChange={(v) => setBpm(first(v))} />
             <p className="text-[11px] text-muted-foreground">File tempo is {selected.bpm}. Changes apply at the next loop boundary.</p>
           </div>
 
@@ -239,8 +239,8 @@ function Player({ visible }: { visible: PatternMeta[] }) {
           </div>
 
           <div className="space-y-2">
-            <label className="eyebrow" htmlFor="vol-slider">Volume</label>
-            <Slider id="vol-slider" aria-label="Volume" min={0} max={1} step={0.01} value={[volume]} onValueChange={(v) => { const n = first(v); setVolume(n); engine.setVolume(n) }} />
+            <span id="vol-label" className="eyebrow block">Volume</span>
+            <Slider aria-labelledby="vol-label" min={0} max={1} step={0.01} value={[volume]} onValueChange={(v) => { const n = first(v); setVolume(n); engine.setVolume(n) }} />
           </div>
 
           <FileFacts meta={selected} file={file} loopTicks={loopTicks} />
