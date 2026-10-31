@@ -1,0 +1,22 @@
+{
+  "label": "preview, not a master",
+  "renderer": "media/soundtrack.py",
+  "renderer_note": "soundtrack.py renders the basslines from pack MIDI with the repo numpy synth, then adds synthesized drums, echo, and a short reverb. media/render.mjs was not run. The commercial videos already in media/out were not rebuilt.",
+  "sources": [
+    "pack/midi/BP01_concrete-breath-Cursor.mid",
+    "pack/midi/BP11_marrow-Cursor.mid",
+    "pack/midi/BP44_acid-rain-Cursor.mid",
+    "pack/midi/BP50_last-call-Cursor.mid"
+  ],
+  "source_sha256": {
+    "pack/midi/BP01_concrete-breath-Cursor.mid": "f0e1bead4d91f179c5734ceb5d244c9d62212360067fc398f317fd8a69d03041",
+    "pack/midi/BP11_marrow-Cursor.mid": "86707962207152a958149859b65194bae76d5133e4a80353b2e4bdccf2e088b1",
+    "pack/midi/BP44_acid-rain-Cursor.mid": "7e2ada619a44be76a634193ac059b709a547e564da5fca4e5d55ee709b3bdbe6",
+    "pack/midi/BP50_last-call-Cursor.mid": "eb1512c29d3e3f49a1f21a5c9e63a70690a80ce15a7f6f4c5a58546eca5ff43b"
+  },
+  "output": "media/preview-Cursor/basement-protocol-preview-Cursor.mp3",
+  "output_sha256": "5ea19549187fe290b436cf0e8c8b352fb060c1ae2ced09817620b7c84b2cc0ee",
+  "duration_s": 30.024,
+  "encode": "ffmpeg libmp3lame -q:a 4 from the soundtrack wav. The wav stays in gitignored media/build and is not committed.",
+  "not": "Not a master. No loudness target is claimed for this preview file."
+}
